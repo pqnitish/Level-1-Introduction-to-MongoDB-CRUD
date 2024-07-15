@@ -1,0 +1,55 @@
+1. What is a NoSQL Database, and explain the types of NoSQL database?
+ANS: NoSQL databases are non-relational databases designed for large-scale data storage and real-time web applications. Types include:
+- Document-based (e.g., MongoDB): Store data in JSON-like documents.
+- Key-value stores (e.g., Redis): Store data as key-value pairs.
+- Column-family stores (e.g., Cassandra): Store data in columns rather than rows.
+- Graph databases (e.g., Neo4j): Store data as nodes, edges, and properties to represent and traverse relationships.
+
+2. What is the difference between SQL and NoSQL databases?
+ANS:
+- SQL: Relational, table-based, fixed schema, ACID transactions, suited for structured data and complex queries.
+- NoSQL: Non-relational, flexible schema, BASE transactions, scalable, suited for unstructured data and large datasets.
+
+3. How to choose between MongoDB and MySQL based on your requirements?
+ANS:
+- Choose MongoDB for flexible schema, hierarchical data storage, horizontal scalability, and rapid development.
+- Choose MySQL for structured data, complex queries, ACID compliance, and strong consistency requirements.
+
+4. What are collections and documents in a MongoDB database?
+ANS:
+- Collections: Equivalent to tables in SQL, they group related documents.
+- Documents: Equivalent to rows in SQL, they are JSON-like records with fields and values.
+
+5. What is BSON? What is the difference between BSON and JSON?
+ANS:
+- BSON: Binary JSON, a binary-encoded serialization of JSON-like documents.
+- Difference: BSON supports more data types, is more efficient in encoding/decoding, and includes metadata for easy traversal.
+
+6. What are MongoDB Compass and MongoDB Shell used for?
+ANS:
+- MongoDB Compass: GUI tool for visualizing, exploring, and managing data in MongoDB.
+- MongoDB Shell: Command-line interface for interacting with MongoDB servers and performing administrative tasks.
+
+7. How to create collections in MongoDB?
+ANS: Collections are automatically created when you insert a document. Alternatively, use db.createCollection(name) in MongoDB Shell.
+
+8. What is the difference between insertMany and insertOne?
+ANS:
+- insertOne: Inserts a single document.
+- insertMany: Inserts multiple documents in a single operation.
+
+9. What is the difference between deleteOne and deleteMany?
+ANS:
+- deleteOne: Deletes the first document that matches the filter criteria.
+- deleteMany: Deletes all documents that match the filter criteria.
+
+10. How to read data in MongoDB? What is the difference between find and findOne?
+ANS:
+- Use db.collection.find(filter) to read multiple documents.
+- Use db.collection.findOne(filter) to read a single document that matches the filter criteria.
+
+11. What is $set in MongoDB?
+ANS: $set is an update operator used to modify the value of a field in a document.
+
+12. How to filter data using MongoDB?
+ANS: Use query operators (e.g., $eq, $gt, $lt, $in) in the find method to filter documents, e.g., db.collection.find({ age: { $gt: 25 } }).
